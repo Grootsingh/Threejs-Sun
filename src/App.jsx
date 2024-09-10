@@ -9,7 +9,8 @@ function App() {
 
   return (
     <>
-  <Canvas>
+  <Canvas style={{background:"black"}}>
+    <color args={["rgb(18, 18, 18)"]} attach={"background"}/> 
     <OrbitControls/>
         <ambientLight intensity={ 2.5 } />
         <pointLight args={["#FF371F",20,10,0]} position={[0,1,0]}/>
